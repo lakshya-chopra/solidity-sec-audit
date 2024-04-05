@@ -16,11 +16,13 @@ Run this smart contract in the docker image we just pulled:
 
 View the image using: `xdg-open MyContracts.sol.png`
 
+![image](https://github.com/lakshya-chopra/solidity-sec-audit/assets/77010972/c4ebb1f6-1145-4f5f-b404-19aca695f56e)
+
 
 ## Solidity smart contracts security audit images:
 ```
 Mythril
-Slither
+Slither (https://github.com/crytic/slither)
 Securify
 
 ```
