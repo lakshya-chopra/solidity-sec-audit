@@ -26,3 +26,16 @@ Slither (https://github.com/crytic/slither)
 Securify
 
 ```
+
+## Using slither:
+```
+$ docker pull trailofbits/eth-security-toolbox
+```
+Mount the contracts data directory to the container and run it:
+```
+$ docker run -v $(pwd)/contracts:/contracts/ trailofbits/eth-security-toolbox bash -c "solc /contracts/mycontract.sol" 
+```
+Note that one could've directly opened an interactive terminal using `docker run -it -v $(pwd)/contracts:/contracts/ trailofbits/eth-security-toolbox bash`
+
+Compiler and generate the artifact (audit report) using the `-o` flag.
+![image](https://github.com/lakshya-chopra/solidity-sec-audit/assets/77010972/ea648c99-8178-455a-a40a-37ac6193384e)
