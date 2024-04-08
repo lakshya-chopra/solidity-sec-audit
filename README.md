@@ -37,5 +37,12 @@ $ docker run -v $(pwd)/contracts:/contracts/ trailofbits/eth-security-toolbox ba
 ```
 Note that one could've directly opened an interactive terminal using `docker run -it -v $(pwd)/contracts:/contracts/ trailofbits/eth-security-toolbox bash`
 
-Compiler and generate the artifact (audit report) using the `-o` flag.
+Compile and generate the artifact using the `-o` flag.
 ![image](https://github.com/lakshya-chopra/solidity-sec-audit/assets/77010972/ea648c99-8178-455a-a40a-37ac6193384e)
+
+Run this command to view the audit report:
+```
+slither /contracts/mycontract.sol
+```
+![image](https://github.com/lakshya-chopra/solidity-sec-audit/assets/77010972/f8b7bca5-5771-41eb-8534-a36928b518f2)
+
